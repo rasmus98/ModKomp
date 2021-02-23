@@ -6,4 +6,5 @@ Git repository for the class Models for Complex Systems
 2. Once you have added your Z function to a class, go to the file `arena.py` and register it, by importing it (`from group0 import Group0IsAwesome`) and adding it to the list of models in the Engine. 
 
 Once you have completed the two above points, make a pull request, and your model will be competing against the rest on Friday. Models are tested on speed for various values of `n`. 
+
 __Important:__ Solutions based on closed form solutions to the Ising problem will not be allowed to compete. Closed forms are of course very good solutions, but the point here is to implement the variable elimination algorithm. 
