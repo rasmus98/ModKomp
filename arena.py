@@ -1,4 +1,5 @@
 from nikolajs_dummy import NikolajsDummyCalculator
+from rasmus import rasmus_fast, rasmus_brute
 
 class DummyEngine():
     def __init__(self, models): self.models = models
@@ -13,6 +14,8 @@ class DummyEngine():
 #TODO: Import your model class (e.g. NikolajsDummyCalculator) and add it to the list of models
 E = DummyEngine(models=[
     NikolajsDummyCalculator()
+    rasmus_fast()
+    rasmus_brute()
     ])
 # We print all valid models
 E.is_valid()
