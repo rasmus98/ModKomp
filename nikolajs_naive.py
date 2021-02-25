@@ -10,5 +10,8 @@ class nikolajs_naive:
         return np.exp(-np.sum(w*x[1:]*(x[:-1])))
 
     def Z(self, n, w):
-        """Compute the normalization constant for a choice of n and w"""
+        """Compute the normalization constant for a choice of n and w
+        n: Integer
+        w: np.array, shape = (n-1,)
+        """
         return sum(self._P(x, w) for x in product([-1, 1], repeat=n))
